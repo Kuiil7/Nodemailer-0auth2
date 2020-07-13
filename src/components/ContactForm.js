@@ -3,8 +3,16 @@ import '../styles/ContactForm.css'
 
 
 const ContactForm = () => (
-  
+  <div id="contact" className="bg-dark">
+
+ 
   <form className="contact-form" method="POST" action="/contact">
+    <div>
+      <p>
+        <h1>
+CONTACT ME          </h1>
+      </p>
+    </div>
     <div className="form-field">
       <label htmlFor="name">
         <div className="label-content">Name:</div>
@@ -26,7 +34,7 @@ const ContactForm = () => (
       </label>
     </div>
 
-    <button type="submit">Send</button>
+    <button className="btn" id="send_button" type="submit">Send</button>
 
     <div>
       { window.location.hash === '#success' &&
@@ -41,6 +49,7 @@ const ContactForm = () => (
       }
     </div>
   </form>
+  </div>
 )
 
 export default ContactForm

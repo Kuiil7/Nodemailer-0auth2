@@ -29,3 +29,12 @@
 .contact-form label {
   text-align: left;
 }
+
+#contact {
+  color:white;
+
+}
+
+#send_button {
+  background-color:  #f0ad4e;;
+}
