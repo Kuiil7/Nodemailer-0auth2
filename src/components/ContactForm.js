@@ -1,7 +1,9 @@
 import React from 'react'
 import '../styles/ContactForm.css'
 
+
 const ContactForm = () => (
+  
   <form className="contact-form" method="POST" action="/contact">
     <div className="form-field">
       <label htmlFor="name">

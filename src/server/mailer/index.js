@@ -1,24 +1,35 @@
 import nodemailer from 'nodemailer'
 import config from './config'
 
-const transporter = nodemailer.createTransport({
-  service: 'Gmail',
-  auth: {
-    type: 'OAuth2',
-    ...config
-  }
-})
+require('dotenv').config();
 
-const sendMail = message => {
+const log = console.log;
+
+// Step 1
+let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD 
+    }
+});
+
+
+const send = ({ email, name, text }) => {
+  const from = name && email ? `${name} <${email}>` : `${name || email}`
+  const message = {
+    from,
+    to: 'kuiil7ig11@gmail.com',
+    subject: `New message from ${from} visitors`,
+    text,
+    replyTo: from
+  };
+
   return new Promise((resolve, reject) => {
-    transporter.sendMail(message, (error, info) => {
-      if (error) {
-        reject(error)
-        return
-      }
-      resolve(info)
-    })
+    transporter.sendMail(message, (error, info) =>
+      error ? reject(error) : resolve(info)
+    )
   })
 }
 
-export default sendMail
+export default send
