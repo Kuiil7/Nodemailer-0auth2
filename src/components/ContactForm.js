@@ -3,6 +3,7 @@ import '../styles/ContactForm.css'
 
 
 const ContactForm = () => (
+  
   <div id="contact" className="bg-dark">
 
  
@@ -50,6 +51,7 @@ CONTACT ME          </h1>
     </div>
   </form>
   </div>
+
 )
 
 export default ContactForm
