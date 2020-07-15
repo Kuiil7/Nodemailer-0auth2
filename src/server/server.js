@@ -5,18 +5,16 @@ import mailer from './mailer'
 
 
 const path = require('path')
-
+const app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const app = express()
-app.use('/', express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'build')));
 
-//Server response
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/react-portfolio/build/index.html'));
 
-})
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+ });
 
 app.post('/contact', (req, res) => {
   const { email = '', name = '', message = '' } = req.body
