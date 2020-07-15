@@ -7,7 +7,7 @@ var path = require('path');
 let app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(express.static(path.join(__dirname, "public")));
 res.sendFile(path.join(__dirname, '../public', 'index.html'));
 res.sendFile('index.html', { root: path.join(__dirname, '../public') });
 
