@@ -1,6 +1,10 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
   "private": true,
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -11,13 +15,16 @@
     "react-scripts": "^1.0.11"
   },
   "scripts": {
-    "start": "node server.js",
- 
- 
+    "start": "start npm run start:client && start npm run start:server",
+    "start:client": "react-scripts start",
+    "start:server": "babel-node src/server/index.js",
+    "build": "webpack",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "proxy": {
     "/contact": {
-      "target": "http://localhost:4000"
+      "target": "http://localhost:4000/"
     }
   },
   "devDependencies": {
