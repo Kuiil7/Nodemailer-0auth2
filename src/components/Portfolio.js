@@ -10,7 +10,7 @@ function Portfolio () {
       <img src="https://i.imgrz.com/6DHL.png" className="card-img-top" alt="movie magic signup" />
       <div className="card-body">
         <h5 className="card-title">Movie Magic!</h5>
-        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p className="card-text">This application allows the user to find movies and fellow movie buffs (called "buddies") based on information they provide in a form which is accessed upon signing up or logging in.</p>
       </div>
       <a href="https://infinite-inlet-20359.herokuapp.com/" className="btn btn-dark bg-dark">DEMO</a>
 
@@ -22,7 +22,7 @@ function Portfolio () {
       <img src="https://i.imgrz.com/6mBE.png" className="card-img-top" alt="four sports icon" />
       <div className="card-body">
         <h5 className="card-title">Sports Tracker</h5>
-        <p className="card-text">Sports Tracker, a website dedicated to the professional sports leagues of the United States (minus MLS). Features: stats, news, single league, individual teams, and a favorites function.</p>
+        <p className="card-text">Sports Tracker, a website dedicated to the professional sports leagues of the United States (MLS pending). Features: stats, news, single league, individual teams, and a favorites function.</p>
       </div>
       <a href="#" className="btn btn-dark">DEMO</a>
 
