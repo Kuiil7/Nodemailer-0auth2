@@ -7,6 +7,9 @@ let app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+res.sendFile(path.join(__dirname, '../public', 'index.html'));
+res.sendFile('index.html', { root: path.join(__dirname, '../public') });
+
 app.get('*', (req, res) => {
   res.send('Server is working. Please post at "/contact" to submit a message.')
 })
