@@ -11,7 +11,7 @@
     "react-scripts": "^1.0.11"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "start npm run start:client && start npm run start:server",
     "start:client": "react-scripts start",
     "start:server": "babel-node src/server/index.js",
     "build": "react-scripts build",
