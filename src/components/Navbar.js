@@ -16,7 +16,7 @@ function Navbar() {
           <a className="nav-link" href="/#about">About </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#main_content">About Me</a>
+          <a className="nav-link" href="/#main_content">Contact</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/#portfolio">Portfolio</a>
@@ -24,7 +24,9 @@ function Navbar() {
         <li className="nav-item">
           <a className="nav-link" href="/#contact-form">Contact</a>
         </li>
-      
+        <li className="nav-item">
+          <a className="nav-link" href="/#footer">Contact</a>
+        </li>
       </ul>
     </div>
   </nav>
