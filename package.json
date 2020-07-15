@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio",
-  "version": "0.x",
+  "version": "0.1.0",
   "engines": {
     "node": "12.x",
     "npm": "6.x"
