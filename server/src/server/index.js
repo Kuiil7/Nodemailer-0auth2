@@ -2,6 +2,7 @@ import 'babel-polyfill'
 import express from 'express'
 import bodyParser from 'body-parser'
 import mailer from './mailer'
+var path = require('path');
 
 let app = express()
 app.use(bodyParser.json());
