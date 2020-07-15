@@ -12,8 +12,11 @@
   },
   "scripts": {
     "dev-server": "webpack-dev-server --open",
-    "start": "node server.js",
-    "build": "webpack -p",
+    "start": "node server.js",    "start:client": "react-scripts start",
+    "start:server": "babel-node src/server/index.js",
+    "build": "react-scripts build webpack -p",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
   "proxy": {
