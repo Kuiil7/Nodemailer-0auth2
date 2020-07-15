@@ -5,14 +5,17 @@ import mailer from './mailer'
 
 
 const path = require('path')
-const app = express()
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const app = express()
 app.use('/', express.static(path.join(__dirname, 'public')))
 
+//Server response
 app.get('*', (req, res) => {
-  res.send('Server is working. Please post at "/contact" to submit a message.')
+  res.sendFile(path.join(__dirname+'/react-portfolio/build/index.html'));
+
 })
 
 app.post('/contact', (req, res) => {
