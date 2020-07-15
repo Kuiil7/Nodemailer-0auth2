@@ -10,18 +10,23 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item ">
-          <a className="nav-link" href="Home">Home  </a>
+          <a className="nav-link" href="/#home">Home  </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="About">About </a>
+          <a className="nav-link" href="/#about">About </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#Portfolio">Portfolio</a>
+          <a className="nav-link" href="/#main_content">Contact</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#Contact">Contact</a>
+          <a className="nav-link" href="/#portfolio">Portfolio</a>
         </li>
-        
+        <li className="nav-item">
+          <a className="nav-link" href="/#contact-form">Contact</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/#footer">Contact</a>
+        </li>
       </ul>
     </div>
   </nav>

@@ -1,0 +1,46 @@
+#main_content{
+    height: 600px;
+    color: white;
+
+}
+
+#name {
+    font-size: 12em;
+    color: white;
+}
+
+#position {
+    font-style: italic;
+    font-size: 2em;
+    color: #f0ad4e;
+}
+
+#location {
+    
+    font-weight: lighter;
+    color: white;
+    font-size: 22px;
+}
+
+#socialContacts {
+    display: flex;
+align-items: space-between;
+justify-content: center;
+padding: 10px;
+
+
+}
+
+#prof-img {
+	height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 5px solid #ddd;   
+}
+
+
+#footer {
+    height: 90px;
+    color: white;
+}
