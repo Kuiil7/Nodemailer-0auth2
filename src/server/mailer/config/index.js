@@ -1,8 +1,8 @@
 const user = 'kuiil7ig11@gmail.com'
-const refreshToken = '1//047WE79WzVQ7JCgYIARAAGAQSNwF-L9IrXilrq7jHj-QDItY3j0UZalRJ7gj34jJQfTVuox2AIxBt395fxqKrNR9nFeZNJ1P34S8'
-const accessToken = 'ya29.a0AfH6SMA5aVA0S5GzjgSYTmd6Au-V62IyEQjioZbNMX6o6y0sg03yP5Xw5ONfOqwCc8oVkm_DImvUdXkZRSL3IdicIPz-leZbXMZvSs0ojkQwgz45TIrpuYcRUSkb8KMBNQITtLsFK8ZimkoXHYUK8T-M90RpLSNJ9mc'
-const clientId = '875666787019-7io053u874v6utkiq1g3rbrkc31tfge7.apps.googleusercontent.com'
-const clientSecret = 'ndijdhuzfzst0XwjldtodGLQ'
+const refreshToken = '1//04pkydK_vJZjaCgYIARAAGAQSNwF-L9IrWjEWanEwhEIYyb3Z3cIvD7MoFJJNVkSPSQDSvtuaUE0nZReQnW8GeMP21D4FWnZ3N0w'
+const accessToken = 'ya29.a0AfH6SMC6TOsGeL9-EoTz8tpAXnMtpzE4c38S3bqVi5tOQuqz1LsqBngzRcoCbdixt-ixhcLJG3lyCxGnpCGJ4zCQIpbUYtMzd7jpUJVuInWw_v7RokOWrgj0j4wbkrLCyfIKYEz_g3o07Su7OPNZtDMbbG6Og61sRG0'
+const clientId = '875666787019-rf0h27n6ufnkbe2jom6hvbnmnl267qe9.apps.googleusercontent.com-iurajcga4g9k2t7857a49o830i6pg9gq.apps.googleusercontent.com'
+const clientSecret = 'HYBpOUinNF1K1RFSW9nM4Kv0'
 
 export default {
   user,

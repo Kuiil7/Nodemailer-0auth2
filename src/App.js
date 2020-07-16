@@ -14,11 +14,15 @@ class App extends Component {
      <MainContent />  
       <Aboutme />
       <Portfolio />
+     
       <ContactForm />
+   
+
       <Footer />
     </div>  
     )
   }
 }
+
 
 export default App
