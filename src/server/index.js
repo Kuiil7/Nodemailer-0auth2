@@ -4,9 +4,14 @@ import bodyParser from 'body-parser'
 import mailer from './mailer'
 
 let app = express()
+if (process.env.NODE_ENV !== 'production') {
+  analytics.disable();
+}
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("./public"));
+  }
 app.get('*', (req, res) => {
   res.send('Server is working. Please post at "/contact" to submit a message.')
 })
