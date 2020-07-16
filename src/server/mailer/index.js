@@ -1,11 +1,7 @@
 import nodemailer from 'nodemailer'
-import config from './config'
-
 require('dotenv').config();
 
-const log = console.log;
 
-// Step 1
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -13,14 +9,14 @@ let transporter = nodemailer.createTransport({
         pass: process.env.PASSWORD 
     }
 });
-
+console.log(EMAIL, PASSWORD);
 
 const send = ({ email, name, text }) => {
   const from = name && email ? `${name} <${email}>` : `${name || email}`
   const message = {
     from,
     to: 'kuiil7ig11@gmail.com',
-    subject: `New message from ${from} visitors`,
+    subject: `New message from ${from} (Portfolio)`,
     text,
     replyTo: from
   };
