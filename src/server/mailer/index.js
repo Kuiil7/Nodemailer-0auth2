@@ -3,8 +3,6 @@ import config from './config'
 
 require('dotenv').config();
 
-const log = console.log;
-
 // Step 1
 let transporter = nodemailer.createTransport({
     service: 'gmail',

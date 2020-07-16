@@ -24,7 +24,7 @@ function Portfolio () {
         <h5 className="card-title">Sports Tracker</h5>
         <p className="card-text">Sports Tracker, a website dedicated to the professional sports leagues of the United States (MLS pending). Features: stats, news, single league, individual teams, and a favorites function.</p>
       </div>
-      <a href="#" className="btn btn-dark">DEMO</a>
+      <a href="https://sportswarriorsgwu.github.io/Sports-Tracker/" className="btn btn-dark">DEMO</a>
 
     </div>
   </div>
@@ -35,7 +35,7 @@ function Portfolio () {
         <h5 className="card-title">Employee Tracker</h5>
         <p className="card-text">A command line, content management system app that allows you to view and interact with information stored in a database. The app allows you to add, vew, and update departments, roles, employees ideal for employee tracking.</p>
       </div>
-      <a href="#" className="btn btn-dark">DEMO</a>
+      <a href="https://github.com/Kuiil7/Employee-Tracker" className="btn btn-dark">DEMO</a>
 
     </div>
   </div>
