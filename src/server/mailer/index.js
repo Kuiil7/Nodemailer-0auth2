@@ -2,13 +2,19 @@ import nodemailer from 'nodemailer'
 
 import config from './config'
 
-const transporter = nodemailer.createTransport({
-  service: 'Gmail',
+
+const transporter  = nodemailer.createTransport({
+  pool: true,
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true, // use TLS
   auth: {
-    type: 'OAuth2',
-    ...config
+  ...config
   }
 });
+
+
+
 
 const send = ({ email, name, text }) => {
   const from = name && email ? `${name} <${email}>` : `${name || email}`

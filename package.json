@@ -13,7 +13,8 @@
     "nodemailer": "^4.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "1.1.5",
+    "serve": "11.3.2"
   },
   "scripts": {
     "start": "start npm run start:client && start npm run start:server",
@@ -21,11 +22,12 @@
     "start:server": "babel-node src/server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "proxy": {
     "/contact": {
-      "target": "http://localhost:4000/"
+      "target": "http://localhost:5000/"
     }
   },
   "devDependencies": {
