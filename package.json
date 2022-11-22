@@ -13,7 +13,7 @@
     "nodemailer": "^4.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.1.5",
+    "react-scripts": "5.0.1",
     "serve": "11.3.2"
   },
   "scripts": {
